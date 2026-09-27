@@ -1,13 +1,13 @@
 package ru.yandex.practicum.delivery;
 
-class PerishableParcel extends Parcel {        // скоропортящаяся посылка
+public class PerishableParcel extends Parcel {        // скоропортящаяся посылка
     int timeToLive;             // срок годности
 
-    PerishableParcel(String description,
-                     String deliveryAddress,
-                     int weight,
-                     int sendDay,
-                     int timeToLive) {
+    public PerishableParcel(String description,
+                            String deliveryAddress,
+                            int weight,
+                            int sendDay,
+                            int timeToLive) {
         super(description, deliveryAddress, weight, sendDay);
         this.timeToLive = timeToLive;
         super.type = "Скоропортящаяся посылка";

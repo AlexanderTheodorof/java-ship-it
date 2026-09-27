@@ -2,12 +2,12 @@ package ru.yandex.practicum.delivery;
 
 import java.util.ArrayList;
 
-class ParcelBox <T extends Parcel> {
+public class ParcelBox <T extends Parcel> {
     private final ArrayList<T> parcels = new ArrayList<>();
     private final int maxWeight;
     private       int sumWeight;
     
-    ParcelBox(int maxWeight) {
+    public ParcelBox(int maxWeight) {
         this.maxWeight = maxWeight;
         sumWeight      = 0;
     }
@@ -35,7 +35,7 @@ class ParcelBox <T extends Parcel> {
 
     public String getParcelsBoxType() {
         if (!parcels.isEmpty()) {
-            return parcels.get(0).getType();
+            return parcels.getFirst().getType();
         } else {
             return "";
         }

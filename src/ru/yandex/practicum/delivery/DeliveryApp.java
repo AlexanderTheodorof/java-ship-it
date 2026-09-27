@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class DeliveryApp {
 
     private static final Scanner        scanner         = new Scanner(System.in);
-    private static       List<Parcel>   allParcels      = new ArrayList<>();
-    private static       List<Tracable> tracableParcels = new ArrayList<>();
+    private static final List<Parcel>   allParcels      = new ArrayList<>();
+    private static final List<Tracable> tracableParcels = new ArrayList<>();
 
     private static ParcelBox<StandardParcel>   standardParcelBox;
     private static ParcelBox<PerishableParcel> perishableParcelBox;

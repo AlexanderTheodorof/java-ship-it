@@ -1,11 +1,11 @@
 package ru.yandex.practicum.delivery;
 
-class FragileParcel extends Parcel implements Tracable {           // хрупкая посылка
+public class FragileParcel extends Parcel implements Tracable {           // хрупкая посылка
 
-    FragileParcel(String description,
-                  String deliveryAddress,
-                  int    weight,
-                  int    sendDay) {
+    public FragileParcel(String description,
+                         String deliveryAddress,
+                         int weight,
+                         int sendDay) {
         super(description, deliveryAddress, weight, sendDay);
         super.type = "Хрупкая посылка";
     }

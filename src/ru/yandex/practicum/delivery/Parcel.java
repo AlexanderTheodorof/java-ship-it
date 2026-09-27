@@ -2,7 +2,7 @@ package ru.yandex.practicum.delivery;
 
 public class Parcel {
     //добавьте реализацию и другие необходимые классы
-    protected final static int deliveryCost = 1;
+    protected static final int deliveryCost = 1;
     protected String description;
     protected String deliveryAddress;
     protected String type; 

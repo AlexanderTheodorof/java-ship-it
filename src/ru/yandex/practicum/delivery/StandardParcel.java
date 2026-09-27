@@ -1,11 +1,11 @@
 package ru.yandex.practicum.delivery;
 
-class StandardParcel extends Parcel {
+public class StandardParcel extends Parcel {
 
-    StandardParcel(String description,
-                   String deliveryAddress,
-                   int weight,
-                   int sendDay) {
+    public StandardParcel(String description,
+                          String deliveryAddress,
+                          int weight,
+                          int sendDay) {
         super(description, deliveryAddress, weight, sendDay);
         super.type = "Стандартная посылка";
     }
